@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset leve e padrão */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* =========================
+   ANIMAÇÕES INSTITUCIONAIS
+   ========================= */
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes driftLeft {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-14px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes driftRight {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(14px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Classes utilitárias */
+.animate-float-medium {
+  animation: float 7s ease-in-out infinite;
+}
+
+.animate-drift-left {
+  animation: driftLeft 9s ease-in-out infinite;
+}
+
+.animate-drift-right {
+  animation: driftRight 9s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+  animation: rotateSlow 22s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.9s ease-out both;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.9s ease-out both;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
